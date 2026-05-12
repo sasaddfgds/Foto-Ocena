@@ -1,0 +1,11 @@
+# Deny execution of scripts
+<FilesMatch "\.(php|phtml|php3|php4|php5|phps|pl|py|jsp|asp|sh|cgi)$">
+    Order allow,deny
+    Deny from all
+</FilesMatch>
+
+# Deny access to .htaccess
+<Files ".htaccess">
+    Order allow,deny
+    Deny from all
+</Files>

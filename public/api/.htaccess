@@ -1,0 +1,11 @@
+# Deny access to database files
+<Files "*.db">
+    Order allow,deny
+    Deny from all
+</Files>
+
+# Deny access to .env files
+<Files ".env">
+    Order allow,deny
+    Deny from all
+</Files>
